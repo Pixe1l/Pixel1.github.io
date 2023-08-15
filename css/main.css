@@ -1,0 +1,124 @@
+@font-face{
+    src: url(../fonts/depixelbreit.otf);
+    font-family: standard;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*div contenedor, este contiene todos lo elementos, menos el footer*/
+.contenedor{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /*background-image: url(../img/index/fromSoftware.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: bgChange 20s alternate infinite;
+}
+
+@keyframes bgChange{
+    0%{
+        background-image: url(../img/index/other/eldenring.jpg);
+    }
+    100%{
+        background-image: url(../img/index/other/reddead.png);
+    }
+
+}
+
+/*Overlay que da el efecto de transparencia*/
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+/*Barra de navegación*/
+.header-nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.4);
+}
+.header-logo{
+    display: flex;
+    margin-left: 5%;
+}
+
+.header-logo > h1{
+    color: #fff;
+    align-self: flex-end;
+    margin-left: 10px;
+}
+
+.header-logo > img{
+  width: 100px;
+  height: 100px;
+}
+
+nav{
+    margin-right: 5%;
+    align-self: center;
+}
+nav > ul{
+    list-style: none;
+}
+
+.aNav{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #fff;
+    margin-left: 20px;
+}
+.aNav:hover{
+    text-decoration: underline wavy;
+    color: #db7724;
+}
+
+/*Parte principal de bienvenida*/
+.principal{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spanLogo{
+    font-family: standard;
+}
+
+
+/*Pie de página*/
+footer{
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  height: 11vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > p{
+  margin-right: 15px;
+}
+.footer-p > span{
+  margin-left: 15px;
+}
+.footer-icons > img{
+  margin-left: 10px;
+  width: 38px;
+  height: 38px;
+}
